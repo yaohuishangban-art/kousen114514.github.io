@@ -1,39 +1,509 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
+
     <title>kousen114514のホームページ</title>
+
+    <style>
+
+        body {
+            background-color: #008080;
+            margin: 0;
+            padding: 0;
+            font-family: "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        a {
+            color: #0000ee;
+        }
+
+        a:visited {
+            color: #800080;
+        }
+
+        .main {
+            width: 780px;
+            margin: 20px auto;
+            background-color: white;
+            border: 3px double #000080;
+            padding: 10px;
+        }
+
+        .top {
+            background-color: #000080;
+            color: white;
+            border: 3px ridge #cccccc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .top h1 {
+            margin: 0;
+            font-size: 30px;
+            color: #ffff00;
+        }
+
+        .top p {
+            margin-bottom: 0;
+        }
+
+        .menu {
+            margin-top: 10px;
+            background-color: #c0c0c0;
+            border: 3px outset #ffffff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .menu a {
+            margin-left: 12px;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        .welcome {
+            margin-top: 15px;
+            border: 2px solid #ff0000;
+            background-color: #ffffcc;
+            padding: 10px;
+        }
+
+        .welcome h2 {
+            color: #ff0000;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .box {
+            margin-top: 15px;
+            border: 2px solid #000080;
+            background-color: #eeeeff;
+        }
+
+        .box-title {
+            background-color: #000080;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .box-body {
+            padding: 10px;
+        }
+
+        .counter {
+            text-align: center;
+            background-color: #000000;
+            color: #00ff00;
+            border: 3px inset #aaaaaa;
+            padding: 10px;
+            margin: 10px auto;
+            width: 300px;
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+        }
+
+        .counter-number {
+            font-size: 24px;
+            letter-spacing: 4px;
+        }
+
+        .new {
+            color: red;
+            font-weight: bold;
+        }
+
+        .blink {
+            color: red;
+            font-weight: bold;
+        }
+
+        .two-column {
+            display: flex;
+            gap: 10px;
+        }
+
+        .column {
+            width: 50%;
+        }
+
+        .profile {
+            line-height: 1.8;
+        }
+
+        .update {
+            line-height: 1.8;
+        }
+
+        .construction {
+            text-align: center;
+            background-color: #ffff00;
+            border: 3px dashed #ff0000;
+            padding: 10px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .links {
+            line-height: 2;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid #000080;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .small {
+            font-size: 11px;
+        }
+
+        .rainbow {
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .notice {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-    <h1>★ kousen114514のホームページ ★</h1>
+<div class="main">
 
-    <p>ようこそ！！来てくれてありがとうございます！！</p>
 
-    <hr>
+    <!-- トップ -->
 
-    <h2>★ メニュー ★</h2>
+    <div class="top">
 
-    <p>
-        ・プロフィール<br>
-        ・日記<br>
-        ・ゲーム<br>
-        ・リンク<br>
-        ・掲示板
-    </p>
+        <h1>★☆★ kousen114514のホームページ ★☆★</h1>
 
-    <hr>
+        <p>
+            ようこそ！！あなたは大切な訪問者です！！
+        </p>
 
-    <p>あなたは 000001 人目の訪問者です！</p>
+    </div>
 
-    <p>キリ番を踏んだ人は掲示板に報告してください！！</p>
 
-    <hr>
+    <!-- メニュー -->
 
-    <p>最終更新日：2026/08/19</p>
+    <div class="menu">
 
-    <p>リンクフリーです。</p>
+        <a href="index.html">HOME</a>
+
+        <a href="#">プロフィール</a>
+
+        <a href="#">日記</a>
+
+        <a href="#">ゲーム</a>
+
+        <a href="#">リンク</a>
+
+        <a href="#">掲示板</a>
+
+    </div>
+
+
+    <!-- ようこそ -->
+
+    <div class="welcome">
+
+        <h2>★☆ ようこそ！！ ☆★</h2>
+
+        <p>
+            当ホームページに来てくれてありがとうございます！！
+        </p>
+
+        <p>
+            ここは管理人 <b>kousen114514</b> が
+            趣味で運営している個人ホームページです。
+        </p>
+
+        <p class="notice">
+            ★ ゆっくりしていってね！！ ★
+        </p>
+
+    </div>
+
+
+    <!-- カウンター -->
+
+    <div class="box">
+
+        <div class="box-title">
+            ■ アクセスカウンター
+        </div>
+
+        <div class="box-body">
+
+            <div class="counter">
+
+                あなたは<br>
+
+                <span class="counter-number">
+                    000001
+                </span>
+
+                <br>
+
+                人目の訪問者です！
+
+            </div>
+
+            <p align="center">
+
+                キリ番を踏んだ方は掲示板に報告してください！！
+
+                <br>
+
+                <span class="small">
+                    ※現在カウンターは試験運用中です。
+                </span>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 更新履歴 -->
+
+    <div class="box">
+
+        <div class="box-title">
+            ■ 更新履歴
+        </div>
+
+        <div class="box-body update">
+
+            <span class="new">NEW!</span>
+
+            2026/08/19　ホームページを開設しました！
+
+            <br>
+
+            2026/08/19　HTMLの勉強を始めました。
+
+            <br>
+
+            2026/08/19　サイトを作成中です。
+
+        </div>
+
+    </div>
+
+
+    <!-- 2列 -->
+
+    <div class="two-column">
+
+
+        <!-- プロフィール -->
+
+        <div class="column">
+
+            <div class="box">
+
+                <div class="box-title">
+                    ■ 管理人プロフィール
+                </div>
+
+                <div class="box-body profile">
+
+                    <b>名前：</b>kousen114514
+
+                    <br>
+
+                    <b>好きなもの：</b>機械、PC、ゲームなど
+
+                    <br>
+
+                    <b>趣味：</b>いろいろ
+
+                    <br>
+
+                    <b>一言：</b>
+                    よろしくお願いします！！
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- お知らせ -->
+
+        <div class="column">
+
+            <div class="box">
+
+                <div class="box-title">
+                    ■ お知らせ
+                </div>
+
+                <div class="box-body">
+
+                    <p>
+                        現在サイトを制作中です。
+                    </p>
+
+                    <p>
+                        <span class="blink">
+                            ★ 相互リンク募集中！！ ★
+                        </span>
+                    </p>
+
+                    <p>
+                        掲示板もそのうち作ります。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- 工事中 -->
+
+    <div class="box">
+
+        <div class="box-title">
+            ■ 工事中のページ
+        </div>
+
+        <div class="box-body">
+
+            <div class="construction">
+
+                🚧 工事中 🚧
+
+                <br>
+
+                このページは現在制作中です。
+
+                <br>
+
+                しばらくお待ちください！！
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- リンク -->
+
+    <div class="box">
+
+        <div class="box-title">
+            ■ リンク
+        </div>
+
+        <div class="box-body links">
+
+            <a href="#">★ 管理人おすすめサイト</a>
+
+            <br>
+
+            <a href="#">★ 相互リンク募集中</a>
+
+            <br>
+
+            <a href="#">★ 素材屋さん</a>
+
+            <br>
+
+            <a href="#">★ お気に入りサイト</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- 注意書き -->
+
+    <div class="box">
+
+        <div class="box-title">
+            ■ このサイトについて
+        </div>
+
+        <div class="box-body">
+
+            <p>
+                このサイトはリンクフリーです。
+            </p>
+
+            <p>
+                リンクする場合は管理人に一言いただけるとうれしいです。
+            </p>
+
+            <p>
+                バナーは現在準備中です。
+            </p>
+
+            <p class="small">
+                ※当サイトの内容を無断転載することを禁止します。
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- フッター -->
+
+    <div class="footer">
+
+        <p>
+            ★☆★ kousen114514のホームページ ★☆★
+        </p>
+
+        <p>
+            Since 2026
+        </p>
+
+        <p class="small">
+
+            このサイトはHTMLとCSSで作成されています。
+
+            <br>
+
+            推奨ブラウザ：Internet Explorer 6.0以上
+
+            <br>
+
+            ※現在のブラウザでも一応見られます。
+
+        </p>
+
+        <p>
+            © 2026 kousen114514
+        </p>
+
+    </div>
+
+
+</div>
 
 </body>
+
 </html>
